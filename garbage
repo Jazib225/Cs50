@@ -1,1 +1,195 @@
-print ("Ur mother")
+import time
+import sys
+print('Welcome to the  quiz game')
+time.sleep(1)
+print("Answer in lowercase letters")
+time.sleep(2)
+print('you have 5 chances, if you run out of chances you lose')
+print('Also there will be an Extra credit question that if you get correct you will gain another chance')
+chances = 1
+chances = str(chances)
+time.sleep(2)
+
+better_Chaces = 5
+score = 0
+    
+#question_1 = print('Is the earth flat?\n(a) Yes\n(b) No\n(c) Idefinitely\n(d) Never')
+correct_1 = "c"
+for i in range(int(chances)) :
+    answer_1 = input("Question 1: Is the earth flat?\n(a) Yes\n(b) No\n(c) Idefinitely\n(d) Never\n \n Answer: ")
+    if (answer_1 == correct_1):
+        print("Correct! Good Job.\n ")
+        print('You have ', better_Chaces, ' chances left')
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_1, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n \n')
+
+time.sleep(2)
+
+#question_2 = print('How many months have atleast 28 days in them?\n(a) 12\n(b) 6\n(c) 1\n(d) None of the above')
+correct_2 = "a"
+for i in range(int(chances)):
+    answer_2 = input("Question 2: How many months have atleast 28 days in them?\n(a) 12\n(b) 6\n(c) 1\n(d) None of the above\n \n Answer: ")
+    if (answer_2 == correct_2):
+        print('You have ', better_Chaces, ' chances left')
+        print("Correct! Good Job.\n ")
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_2, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n \n')
+
+time.sleep(2)
+
+#question_3 = print('What is the best game?\n(a) Tetris\n(b) minecraft\n(c) fortnite\n(d) Call of Duty\n(e) all the above')
+correct_3 = "a"
+for i in range(int(chances)):
+    answer_3 = input("Question 3: What is the best game?\n(a) Tetris\n(b) minecraft\n(c) fortnite\n(d) Call of Duty\n(e) all the above\n \n Answer: ")
+    if (answer_3 == correct_3):
+        print("Correct! Good Job.\n ")
+        print('You have ', better_Chaces, ' chances left')
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_3, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n \n')
+
+time.sleep(2)
+
+#question_4 = print('What is the best language of code?\n(a) Python\n(b) Java\n(c) C++\n(d) C')
+correct_4 = "c"
+for i in range(int(chances)):
+    answer_4 = input("Question 4: What is the best language of code?\n(a) Python\n(b) Java\n(c) C++\n(d) C \n \n Answer: ")
+    if (answer_4 == correct_4):
+        print("Correct! Good Job.\n ")
+        print('You have ', better_Chaces, ' chances left')
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_4, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n \n')
+
+time.sleep(2)
+
+for i in range(int(chances)):
+    answer_ExtraCredit = input('This is an extra credit question if you get this right you will gain another chance\nExtra Credit: What is the capital of Florida?\n(a) Indianapolis\n(b) Tallahase\n(c) Boston\n(d) India\n\n Anwer: ')
+    correct_ExtraCredit = 'b'
+    if answer_ExtraCredit == correct_ExtraCredit:
+        better_Chaces = better_Chaces + 1
+        print('Nice you got a extra chance, you now have ' + str(better_Chaces) + ' chances left\n\n')
+        break
+    else:
+        print('You got the Extra Credit question wrong, You missed out on a extra chance\n\n')
+time.sleep(2)
+
+#question_5 = print('What is the best code function?\n(a) print\n(b) Ifs\n(c) functions\n(d) none of the above')
+correct_5 = "a"
+for i in range(int(chances)):
+    answer_5 = input("Question 5: What is the best code function?\n(a) print\n(b) Ifs\n(c) functions\n(d) none of the above \n \n Answer: ")
+    if (answer_5 == correct_5):
+        print("Correct! Good Job.\n ")
+        print('You have ', better_Chaces, ' chances left')
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_5, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n \n')
+        if int(better_Chaces) <= 0:
+                sys.exit('You ran out of chances')
+
+time.sleep(2)
+
+#question_6 = print('1+1?\n(a) 2\n(b) window\n(c) 1\n(d) 2 lines')
+correct_6 = 'a'
+for i in range(int(chances)):
+    answer_6 = input("Question 6: 1+1?\n(a) 2\n(b) window\n(c) 1\n(d) 2 lines \n \n Answer: ")
+    if (answer_6 == correct_6):
+        print("Correct! Good Job.\n ")
+        print('You have ', better_Chaces, ' chances left\n \n')
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_6, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n\n')
+        if int(better_Chaces) <= 0:
+                sys.exit('You ran out of chances')
+
+time.sleep(2)
+
+#question_7 = print('What is the best candy?\n(a) Sour patch\n(b)sour skittles\n(c) Sour patch Watermelon\n(d) Sour airheads')
+correct_7 = "c"
+for i in range(int(chances)):
+    answer_7 = input("Question 7: What is the best sour candy?\n(a) Sour patch\n(b)sour skittles\n(c) Sour patch Watermelon\n(d) Sour airheads\n \n Answer: ")
+    if (answer_7 == correct_7):
+        print("Correct! Good Job.\n ")
+        print('You have ', better_Chaces, ' chances left')
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_7, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left\n\n')
+        if int(better_Chaces) <= 0:
+                sys.exit('You ran out of chances')
+
+time.sleep(2)
+
+#question_8 = print('Which question was the best question asked?\n(a) Question 1\n (b) Question 4\n (c) Question 5\n (d) Question 6')
+correct_8 = "b"
+for i in range(int(chances)):
+    answer_8 = input("Question 8: Which question was the best question asked?\n(a) Question 1\n (b) Question 4\n (c) Question 5\n (d) Question 6 \n \nAnswer: ")
+    if (answer_8 == correct_8):
+        print("Correct! Good Job.\n ")
+        score = score + 1
+        break
+    else:
+        print('You suck cause you got it wrong!')
+        time.sleep(0.5)
+        print('The correct answer is ' + correct_8, "")
+        better_Chaces = int(better_Chaces) -1
+        print('You have ', better_Chaces, ' chances left \n \n')
+        if int(better_Chaces) <= 0:
+            sys.exit('You ran out of chances')
+
+
+print("You reached", better_Chaces, "chances")
+
+if int(better_Chaces) == 0:
+        print('You have ran out of chances')
+        
+
+time.sleep(2)
+
+#print the score
+while score >= 7:
+    print("Well done. You score was", score)
+    break
+while score <= 5:
+    print('you suck cause your score was', score)
+    break
+
+print('You ended the game with' + str(better_Chaces) +' Chances left')
+#Goodbye message
+print('Thank you for playing the Quiz game')
